@@ -1,0 +1,267 @@
+.all-ticket-table {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.ticket-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ticket-list-wrapper {
+  overflow-x: auto;
+}
+
+.div-table table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.div-table th, .div-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.div-table th {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.div-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.div-table tr:hover {
+  background-color: #e9ecef;
+}
+
+.view-btn, .delete-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.view-btn {
+  background-color: #17a2b8;
+}
+
+.view-btn:hover {
+  background-color: #138496;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.download-icon {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.agent-dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.ticket-heading::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.ticket-list-wrapper .div-table {
+  overflow: auto;
+}
+
+.ticket-list-wrapper table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  margin-top: 20px;
+}
+
+.ticket-list-wrapper th,
+.ticket-list-wrapper td {
+  padding: 0px 12px;
+  text-align: left;
+  border: none;
+}
+
+.ticket-list-wrapper th {
+  color: #555555;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.ticket-list-wrapper td {
+  border: 1px solid #eee;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.status-text {
+  background-color: black;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.action-icons button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 14px;
+  color: #000;
+}
+
+td[class*="color-"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 8px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.color-0::before {
+  background-color: red;
+}
+
+.color-1::before {
+  background-color: yellow;
+}
+
+.color-2::before {
+  background-color: #1abc9c;
+}
+
+.color-3::before {
+  background-color: #f39c12;
+}
+
+.color-4::before {
+  background-color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .all-ticket-table{
+    margin-left: 0%;
+    padding: 0px;
+  }
+  .openclose-btns {
+    margin-top: 20px;
+    justify-content: start;
+  }
+
+  .ticket-title {
+    padding: 10px 0;
+  }
+
+  .ticket-title h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+  }
+
+  .ticket-title i {
+    font-size: 26px;
+  }
+}
+
+.view-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 3px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.view-btn i {
+  margin-right: 4px;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  pointer-events: auto; 
+}
+
+.close-view-btn {
+  padding: 0px 6px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10%;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.close-view-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.modal-overlay h2{
+  font-size: 16px ;
+  text-align: left;
+}
+
+.agent-dropdown:focus {
+  outline: none;
+  border-color: #3498db;
+}

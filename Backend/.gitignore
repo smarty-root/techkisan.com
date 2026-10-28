@@ -1,0 +1,5 @@
+node_modules
+.env
+scripts
+archive.zip
+google-service-account.json

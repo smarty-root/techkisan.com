@@ -1,0 +1,9 @@
+node_modules
+
+scripts
+google-service-account.json
+Backend/google-service-account.json
+google-services-accounts-notax.json
+Backend/google-service-aacount-solartax.json
+Backend/google-services-taxquotation.json
+Backend/google-sevices-notaxquotation.json
